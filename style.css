@@ -1,9 +1,12 @@
 body {
-	background-color: rgb(252, 245, 232);
+	/* background-color: rgb(252, 245, 232); */
 	color: rgb(14, 0, 0);
 	font-family: "Ubuntu", sans-serif;
 	font-size: 1em;
 	line-height: 30px;
+	background-image: url("images/backgrnd-lewagon.png");
+	background-position: center;
+	background-size: cover;
 }
 h1,
 h2 {
@@ -117,6 +120,10 @@ ul.list-inline {
 }
 @media (max-width: 540px) {
 	/* For a screen < 540px, this CSS will be read */
+	body {
+		background-image: none;
+		background-color: rgb(252, 245, 232);
+	}
 	.container {
 		width: 300px;
 	}
